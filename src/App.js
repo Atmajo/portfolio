@@ -16,7 +16,7 @@ function App() {
     <div className={darkMode? "dark":""}>
       <main className="bg-slate-100 select-none px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-slate-600 dark:to-slate-800  dark:text-white">
         <section className="min-h-screen">
-          <nav className="dark:bg-slate-750 shadow-xl p-10 rounded-xl py-10 mb-12 flex justify-between">
+          <nav className="dark:bg-slate-750 shadow-xl p-5 sm:p-10 rounded-xl py-10 mb-12 flex justify-between ">
             <h1 className="font-burtons text-2xl">Atmajo.</h1>
             <ul className="flex items-center">
                 <li><BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} className="hover:drop-shadow-bglow dark:hover:drop-shadow-glow cursor-pointer text-2xl"/></li>
@@ -26,7 +26,7 @@ function App() {
           <div className="relative mx-auto bg-gradient-to-b from-purple-300 to-purple-500 rounded-full w-80 h-80 mt-20 py-5">
             <img src={deved} alt="deved"/>
           </div>
-          <div className="text-center p-10">
+          <div className="sm:text-center text-left p-10">
             <h2 className="text-6xl py-2 text-purple-700 dark:text-white">Atmajo Chowdhury</h2>
             <h3 className="text-2xl py-2">Full-Stack Developer | UEMK ACM Secretary</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">Student at UEMK, studying B.Tech CSE in 2nd Year. Join me down below and let's begin cracking</p>
