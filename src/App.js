@@ -20,7 +20,6 @@ function App() {
     audio.play();
   }
   const [darkMode, setDarkMode] = useState(false);
-  const [show, setShow] = useState(false);
   return (
     <div className={darkMode? "dark":""}>
       <main className="select-none px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-slate-600 dark:to-slate-800  dark:text-white">
