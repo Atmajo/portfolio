@@ -37,7 +37,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <div className="relative mx-auto bg-gradient-to-b from-purple-300 to-purple-500 rounded-full w-80 h-80 mt-20 py-5">
+          <div className="relative mx-auto bg-gradient-to-b from-purple-300 to-purple-500 rounded-full w-80 h-80 mt-20 py-5 shadow-2xl">
             <img src={deved} alt="deved" draggable="false" />
           </div>
           <div className="sm:text-center text-left sm:p-10 p-5">
