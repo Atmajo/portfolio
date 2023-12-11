@@ -27,7 +27,7 @@ const Tools = () => {
             <img src={`logos/css.png`} alt="" draggable="false" />
           </div>
           <div className="w-20 h-20">
-            <img src={`logos/js.png`} alt="" draggable="false" />
+            <img src={`logos/js.jpg`} alt="" draggable="false" />
           </div>
         </div>
         <div className="flex justify-around py-10">
