@@ -37,7 +37,7 @@ const Home = () => {
         </GlassCard>
         <Link href="/contact">
           <button className="mt-5 bg-gradient-to-r from-[#24BE46] to-[#15722A] py-2 px-4 rounded-[30px] max-xl:">
-            <h1 className="text-[18px] tracking-wide">LET'S CONNECT</h1>
+            <h1 className="text-[18px] tracking-wide">LET&apos;S CONNECT</h1>
           </button>
         </Link>
       </div>

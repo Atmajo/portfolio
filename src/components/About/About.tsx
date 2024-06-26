@@ -17,8 +17,8 @@ const About = () => {
       />
       <GlassCard className="mt-10 p-5">
         <p className="text-lg md:text-center">
-          Hi, I'm Atmajo 👋 - a 3rd-year Btech CSE student with a passion for
-          dev't & freelancing. Currently building awesome stuff.
+          Hi, I&apos;m Atmajo 👋 - a 3rd-year Btech CSE student with a passion for
+          dev&apos;t & freelancing. Currently building awesome stuff.
         </p>
       </GlassCard>
     </div>
