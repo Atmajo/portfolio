@@ -1,9 +1,16 @@
-import Image from "next/image";
+import About from "@/components/About/About";
+import Home from "@/components/Home/Home";
+import Skills from "@/components/Skill/Skill";
+import React from "react";
 
-export default function Home() {
+const Page = () => {
   return (
-    <div>
-      <h1 className="text-center">Coming Soon.......</h1>
-    </div>
+    <>
+      <Home />
+      <About />
+      <Skills />
+    </>
   );
-}
+};
+
+export default Page;
