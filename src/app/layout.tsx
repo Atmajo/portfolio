@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Atmajo's Portfolio</title>
+        <title>Atmajo&apos;s Portfolio</title>
       </head>
       <body
         className={cn(

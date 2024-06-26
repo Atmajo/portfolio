@@ -10,6 +10,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ className }: NavbarProps) => {
+  const pathname = usePathname();
   return (
     <section className={className}>
       <nav className="absolute flex justify-between items-center px-8 py-2 top-0 w-full z-10">
@@ -23,7 +24,7 @@ const Navbar = ({ className }: NavbarProps) => {
             <div
               key={id}
               className={cn(
-                usePathname() === link ? "border-b-2 border-[#28D84F]" : ""
+                pathname === link ? "border-b-2 border-[#28D84F]" : ""
               )}
             >
               <Link key={id} href={link}>
