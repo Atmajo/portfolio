@@ -27,7 +27,11 @@ const Navbar = ({ className }: NavbarProps) => {
                 pathname === link ? "border-b-2 border-[#28D84F]" : ""
               )}
             >
-              <Link key={id} href={link}>
+              <Link
+                key={id}
+                href={link}
+                className={cn(pathname !== link && "hover:text-[#24BE46]")}
+              >
                 {title}
               </Link>
             </div>

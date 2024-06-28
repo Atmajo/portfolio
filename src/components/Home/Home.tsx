@@ -1,13 +1,40 @@
+"use client";
+
 import GlassCard from "@/components/GlassCard";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 
+interface HomeData {
+  id: string;
+  title: string;
+  description: string | null;
+  status: string;
+  imageUrl: string | null;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 const Home = () => {
+  const [homeData, setHomeData] = useState<HomeData[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get("/api/get-home");
+      setHomeData(res.data);
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(homeData);
+
   return (
     <div className="flex flex-col items-center justify-center h-screen mt-5">
       <div className="flex items-center">
@@ -28,10 +55,10 @@ const Home = () => {
                 roboto.className
               )}
             >
-              ATMAJO CHOWDHURY
+              {homeData[0]?.title}
             </h1>
             <h1 className="text-[18px] lg:text-[24px] text-[#28D84F] tracking-widest">
-              WEB DEVELOPER
+              {homeData[0]?.description}
             </h1>
           </div>
         </GlassCard>
