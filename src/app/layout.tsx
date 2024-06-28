@@ -8,6 +8,7 @@ import ContentWrapper from "@/wrapper/ContentWrapper";
 import MobileNavbar from "@/components/MobileNavbar";
 import Banner from "@/components/Banner/Banner";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <MobileNavbar className="lg:hidden" />
         <ContentWrapper>{children}</ContentWrapper>
         <Analytics />
+        <SpeedInsights />
         <Banner />
       </body>
     </html>
