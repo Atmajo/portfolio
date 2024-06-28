@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import ContentWrapper from "@/wrapper/ContentWrapper";
 import MobileNavbar from "@/components/MobileNavbar";
 import Banner from "@/components/Banner/Banner";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Navbar className="hidden lg:flex" />
         <MobileNavbar className="lg:hidden" />
         <ContentWrapper>{children}</ContentWrapper>
+        <Analytics />
         <Banner />
       </body>
     </html>
